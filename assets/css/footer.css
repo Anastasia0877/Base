@@ -18,6 +18,11 @@
     width: 60px;
     height: 60px;
     border: 1px solid var(--black);
+    transition: 0.5s;
+}
+#footer .social-media__item:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
 }
 
 #footer .social-media__item img {

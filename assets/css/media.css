@@ -61,7 +61,7 @@
         display: block;
         z-index: 99;
         top: 49%;
-        right: 50px;
+        right: 20px;
         transform: translateY(-50%);
         width: 40px;
         height: 50px;
@@ -72,7 +72,7 @@
     header .menu-icon.active {
         z-index: 10006;
         top: calc(50% + 5px);
-        right: 50px;
+        right: 20px;
         transform: translateY(-50%);
         width: 25px;
         height: 25px;
@@ -139,6 +139,7 @@
         margin-bottom: 40px;
     }
     header .menu-icon {
+
         right: 35px;
     }
     header .menu-icon.active {
@@ -146,6 +147,15 @@
     }
     header .menu {
         right: 10px;
+
+        right: 20px;
+    }
+    header .menu-icon.active {
+        right: 20px;
+    }
+    header .menu {
+        right: 0px;
+
     }
 }
 
@@ -153,6 +163,11 @@
 
 /* ≤ 739.98px */
 @media screen and (max-width: 739.98px) {
+
+    .red-rect__text{
+        font-size: 65px;
+    }
+
     .bg-hat {
         padding: 6px 6px 200px;
     }
@@ -511,6 +526,15 @@
     .work__slider-arrow {
         max-width: 750px;
     }
+
+    .btn-to-book {
+        width: 95px;
+        height: 95px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
 
 /* ≤ 684.98px */
@@ -580,6 +604,16 @@
     .work__slider-arrow {
         max-width: 490px;
     }
+
+    .btn-to-book {
+        width: 85px;
+        height: 85px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+
 }
 
 /* ≤ 408.98px */
@@ -647,41 +681,6 @@
     }
 }
 /* footer */
-/* @media screen and (max-width: 1171.98px) {
-    .footer-contacts-line a p {
-        font-size: 14px;
-        line-height: 14px;
-    }
-}
-@media screen and (max-width: 1024.98px) {
-    .footer__container {
-        flex-direction: column;
-    }
-    .footer-sb-menu {
-        flex-direction: column;
-    }
-    footer .footer-ul-hidden,
-    footer .footer-menu ul:last-child{
-        display: none;
-    }
-.footer-menu{
-    margin: 0 10px 0 0;
-}
-    footer .footer-menu-hidden{
-        display: block;
-    }
- footer .footer-menu ul {
-        flex-direction: column;
-        margin-bottom: -5px;
-    }
-   footer .footer-menu ul li{
-        margin-bottom: 5px;
-    }
-    footer .footer-menu ul li a{
-        font-size: 16px;
-    }
-} */
-/*  */
 @media screen and (max-width: 1171.98px) {
     .footer-contacts-line a p {
         font-size: 14px;

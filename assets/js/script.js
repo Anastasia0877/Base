@@ -69,3 +69,22 @@ $('.menu-icon').on('click', function(){
     $('.menu-icon, .menu').removeClass("active");
     // $('body').removeClass("overlay");
   }) 
+
+  // button-book
+  function showBookingButton() {
+    const button = $('.btn-to-book');
+    const footer = $('footer');
+  
+    $(window).on('scroll', function () {
+      const scrollTop = $(this).scrollTop();
+      const windowHeight = $(this).height();
+      const footerOffsetTop = footer.offset().top;
+  
+      if (scrollTop >= 200 && (scrollTop + windowHeight) < footerOffsetTop) {
+        button.fadeIn();
+      } else {
+        button.fadeOut();
+      }
+    });
+  }
+  showBookingButton();
